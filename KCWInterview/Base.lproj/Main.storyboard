@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g0O-0J-LUr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selection View Controller-->
+        <scene sceneID="qth-h4-F7h">
+            <objects>
+                <tableViewController storyboardIdentifier="SelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g0O-0J-LUr" customClass="SelectionViewController" customModule="KCWInterview" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZVh-3m-dbi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pizzaCell" rowHeight="200" id="Vo0-1Q-gWC" customClass="PizzaTableViewCell" customModule="KCWInterview" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vo0-1Q-gWC" id="63P-CS-iqJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellPlaceholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="HgL-8J-y8q">
+                                            <rect key="frame" x="16" y="35" width="130" height="130"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="DYK-Jy-JpF"/>
+                                                <constraint firstAttribute="height" constant="130" id="trw-ib-O4v"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfJ-Hb-ANV">
+                                            <rect key="frame" x="154" y="41" width="39.5" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="8Qh-5R-kTg"/>
+                                                <constraint firstAttribute="height" constant="30" id="sq9-lA-9pg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                            <color key="textColor" red="0.88627450980392153" green="0.22745098039215686" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isR-F5-IEi">
+                                            <rect key="frame" x="154" y="72.5" width="200" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="6JA-gs-mvn"/>
+                                                <constraint firstAttribute="height" constant="55" id="xOt-PJ-55a"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bct-WJ-uHi">
+                                            <rect key="frame" x="196" y="137.5" width="100" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="A4z-tt-w0C"/>
+                                                <constraint firstAttribute="width" constant="100" id="ccj-kA-bIK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1W-Ki-2PA" customClass="OrderButton" customModule="KCWInterview" customModuleProvider="target">
+                                            <rect key="frame" x="156" y="132.5" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="jQu-TH-2rU"/>
+                                                <constraint firstAttribute="height" constant="30" id="py4-CA-Uwl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="31"/>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27g-bh-caL" customClass="UIImageView">
+                                            <rect key="frame" x="198.5" y="46" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="ecs-nD-pjC"/>
+                                                <constraint firstAttribute="height" constant="20" id="os9-Av-5HR"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zrq-7R-Qdu" customClass="UIImageView">
+                                            <rect key="frame" x="223.5" y="46" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="1g7-Nj-oRr"/>
+                                                <constraint firstAttribute="height" constant="20" id="H4Z-U4-fIg"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="N1W-Ki-2PA" firstAttribute="top" secondItem="isR-F5-IEi" secondAttribute="bottom" constant="5" id="0sT-ia-QNp"/>
+                                        <constraint firstItem="isR-F5-IEi" firstAttribute="leading" secondItem="HgL-8J-y8q" secondAttribute="trailing" constant="8" id="10f-K9-yeU"/>
+                                        <constraint firstItem="isR-F5-IEi" firstAttribute="centerY" secondItem="63P-CS-iqJ" secondAttribute="centerY" id="632-1K-DR0"/>
+                                        <constraint firstItem="N1W-Ki-2PA" firstAttribute="leading" secondItem="HgL-8J-y8q" secondAttribute="trailing" constant="10" id="Bgq-Nu-Mvj"/>
+                                        <constraint firstItem="Zrq-7R-Qdu" firstAttribute="leading" secondItem="27g-bh-caL" secondAttribute="trailing" constant="5" id="DIZ-7R-Mtb"/>
+                                        <constraint firstItem="27g-bh-caL" firstAttribute="leading" secondItem="cfJ-Hb-ANV" secondAttribute="trailing" constant="5" id="EVs-IE-8xT"/>
+                                        <constraint firstItem="bct-WJ-uHi" firstAttribute="leading" secondItem="N1W-Ki-2PA" secondAttribute="trailing" constant="10" id="F9a-4l-3N3"/>
+                                        <constraint firstItem="cfJ-Hb-ANV" firstAttribute="centerY" secondItem="27g-bh-caL" secondAttribute="centerY" id="Iqi-Cl-1TB"/>
+                                        <constraint firstItem="cfJ-Hb-ANV" firstAttribute="top" secondItem="63P-CS-iqJ" secondAttribute="topMargin" constant="30" id="MSl-zN-ROY"/>
+                                        <constraint firstItem="HgL-8J-y8q" firstAttribute="leading" secondItem="63P-CS-iqJ" secondAttribute="leadingMargin" id="T8f-Dg-YAS"/>
+                                        <constraint firstItem="Zrq-7R-Qdu" firstAttribute="centerY" secondItem="27g-bh-caL" secondAttribute="centerY" id="XbV-F3-jS9"/>
+                                        <constraint firstItem="bct-WJ-uHi" firstAttribute="centerY" secondItem="N1W-Ki-2PA" secondAttribute="centerY" id="qtf-Ff-jvG"/>
+                                        <constraint firstItem="cfJ-Hb-ANV" firstAttribute="leading" secondItem="HgL-8J-y8q" secondAttribute="trailing" constant="8" id="sOn-8E-g6z"/>
+                                        <constraint firstItem="HgL-8J-y8q" firstAttribute="centerY" secondItem="63P-CS-iqJ" secondAttribute="centerY" id="tIZ-Qy-xRU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="chiliView" destination="Zrq-7R-Qdu" id="wld-SC-Mph"/>
+                                    <outlet property="orderButton" destination="N1W-Ki-2PA" id="uU6-Zd-gKH"/>
+                                    <outlet property="pizzaDescriptionLabel" destination="isR-F5-IEi" id="gSb-kR-yzW"/>
+                                    <outlet property="pizzaImageView" destination="HgL-8J-y8q" id="fvQ-i8-ufJ"/>
+                                    <outlet property="pizzaPriceLabel" destination="bct-WJ-uHi" id="RY1-SD-HvB"/>
+                                    <outlet property="pizzaTitleLabel" destination="cfJ-Hb-ANV" id="cvm-e5-RgD"/>
+                                    <outlet property="vegView" destination="27g-bh-caL" id="ZDL-Pm-9nM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="g0O-0J-LUr" id="JYm-gu-oxS"/>
+                            <outlet property="delegate" destination="g0O-0J-LUr" id="aHp-fy-0qp"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uE7-bz-trK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509.60000000000002" y="274.81259370314842"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cellPlaceholderImage" width="133" height="133"/>
+    </resources>
+</document>
